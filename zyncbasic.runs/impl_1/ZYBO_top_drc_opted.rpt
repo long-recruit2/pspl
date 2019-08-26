@@ -1,0 +1,71 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Aug 26 21:42:31 2019
+| Host         : DESKTOP-7NQ195N running 64-bit major release  (build 9200)
+| Command      : report_drc -file ZYBO_top_drc_opted.rpt -pb ZYBO_top_drc_opted.pb -rpx ZYBO_top_drc_opted.rpx
+| Design       : ZYBO_top
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 7
++--------+----------+---------------------------------+------------+
+| Rule   | Severity | Description                     | Violations |
++--------+----------+---------------------------------+------------+
+| RPBF-3 | Warning  | IO port buffering is incomplete | 7          |
++--------+----------+---------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+RPBF-3#1 Warning
+IO port buffering is incomplete  
+Device port jb10 expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#2 Warning
+IO port buffering is incomplete  
+Device port jd10 expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#3 Warning
+IO port buffering is incomplete  
+Device port jd9 expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#4 Warning
+IO port buffering is incomplete  
+Device port je1 expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#5 Warning
+IO port buffering is incomplete  
+Device port je2 expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#6 Warning
+IO port buffering is incomplete  
+Device port je7 expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#7 Warning
+IO port buffering is incomplete  
+Device port je8 expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+
