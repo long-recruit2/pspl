@@ -3,11 +3,15 @@
 
 `default_nettype none
 
-module HEX2OLED_module
-  (dbg1,dbg2,dbg3,dbg4,txd,clk,rstn);
-   input  /* */ wire [31:0] dbg1,dbg2,dbg3,dbg4;
-   output /* */ wire txd;
-   input  /* */ wire clk,rstn;
+module HEX2OLED_module (
+	input wire [31:0] dbg1,
+	input wire [31:0] dbg2,
+	input wire [31:0] dbg3,
+	input wire [31:0] dbg4,
+	output wire txd,
+	input wire clk,
+	input wire rstn
+);
 
    parameter PULSEW  = 10416; // 100MHz/9600bps=10416
    parameter PULSEW2 =  5208; // PULSEW/2
@@ -82,6 +86,6 @@ module HEX2OLED_module
 	  count<=36;
        end
    
-endmodule
+endmodule : HEX2OLED_module
 
 `default_nettype wire

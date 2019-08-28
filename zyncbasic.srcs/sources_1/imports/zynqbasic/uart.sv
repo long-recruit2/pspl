@@ -14,7 +14,14 @@
 //================================================================
 
 // jb10 = UART0TX = waito
-module UART_RX_module(uarti,datao,valido,waito,clk,resetn);
+module UART_RX_module(
+	input wire uarti,
+	output wire[7:0] datao,
+	output wire valido,
+	input wire waito,
+	input wire clk,
+	input wire resetn
+);
 
    parameter PULSEW  = 434;
    parameter PULSEW2 = 217;
@@ -30,12 +37,6 @@ module UART_RX_module(uarti,datao,valido,waito,clk,resetn);
    parameter STT_RCV6 = 6;
    parameter STT_RCV7 = 7;
    parameter STT_STOP = 8;
-
-   input  /* */ wire       uarti;
-   output /* */ wire [7:0] datao;
-   output /* */ wire       valido;
-   input  /* */ wire       waito;
-   input  /* */ wire       clk,resetn;
 
    reg [7:0] 	datai_reg=0;
    reg [7:0] 	datao_reg=0;
@@ -197,7 +198,7 @@ module UART_RX_module(uarti,datao,valido,waito,clk,resetn);
 	valido_reg<=0;
      end
 
-endmodule
+endmodule : UART_RX_module
 
 //================================================================
 
