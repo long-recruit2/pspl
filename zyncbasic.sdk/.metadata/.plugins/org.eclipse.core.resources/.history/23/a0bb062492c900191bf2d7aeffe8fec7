@@ -1,0 +1,90 @@
+/*
+				(C) Sep. 2016, T.IZUMI@Ritsumeikan
+
+ */
+#include <stdio.h>
+#include <stdlib.h> // Std C functions, e.g. exit()
+#include <stdint.h>
+#include "platform.h"
+#include "xparameters.h" // System parameter definitions
+#include "xgpiops.h" // for PS GPIO(MIO)
+#include "xgpio.h"   // for PL GPIO
+
+// PS only pins MIO
+#define LD_MIO7 7
+#define BTN_MIO50 50
+#define BTN_MIO51 51
+
+#define DELAYLOOP 0x80000
+
+unsigned int *gpio01=XPAR_AXI_GPIO_0_BASEADDR+XGPIO_DATA_OFFSET;
+unsigned int *gpio02=XPAR_AXI_GPIO_0_BASEADDR+XGPIO_DATA2_OFFSET;
+
+static XGpioPs gpiops;
+
+int main(){
+  // Local variables
+  XGpioPs_Config* gpiops_config_ptr;
+  int counter;
+  int run;
+  int r;
+  int i;
+
+  // Initialize the platform
+  init_platform();
+
+  printf("testgpio.c: ");
+  printf(__TIMESTAMP__);
+  printf("\n");
+  fflush(stdout);
+
+  gpiops_config_ptr=XGpioPs_LookupConfig(XPAR_XGPIOPS_0_DEVICE_ID);
+  r=XGpioPs_CfgInitialize(&gpiops,gpiops_config_ptr,gpiops_config_ptr->BaseAddr);
+  if(r!=XST_SUCCESS) {
+    print( "GPIOps Init Err\n\r");
+    exit(-1);
+  }
+  XGpioPs_SetDirectionPin   (&gpiops,LD_MIO7  ,1);
+  XGpioPs_SetDirectionPin   (&gpiops,BTN_MIO50,0);
+  XGpioPs_SetDirectionPin   (&gpiops,BTN_MIO51,0);
+  XGpioPs_SetOutputEnablePin(&gpiops,LD_MIO7  ,1);
+  XGpioPs_SetOutputEnablePin(&gpiops,BTN_MIO50,0);
+  XGpioPs_SetOutputEnablePin(&gpiops,BTN_MIO51,0);
+
+  int ld,pb50,pb51,val01i,val01o,val02i,val02o;
+
+  counter=0;
+  run=1;
+  while (run) {
+    for (i=0;i<DELAYLOOP;i++) {
+      pb50=XGpioPs_ReadPin(&gpiops,BTN_MIO50); // read BTN MIO50
+      pb51=XGpioPs_ReadPin(&gpiops,BTN_MIO51); // read BTN MIO51
+
+      // gpio is mapped to SW/BTN on reading but mapped to LD on writing, how?
+      val01i=*gpio01; // read SW[3:0] & BTN[3:0]
+      val01o=(pb51?8:0)|(pb50?4:0)|(counter&3);
+      *gpio01=val01o; // write LD[3:0]
+
+      val02i=*gpio02;
+      *gpio02=counter;
+
+      ld=(val01i&15)?1:0;
+      XGpioPs_WritePin(&gpiops,LD_MIO7,ld); // write LD MIO07
+      if (pb50!=0 && pb51!=0) run=0;
+    }
+
+    printf("pb50=%x pb51=%x val01i=%08x val01o=%08x\n",
+    		pb50,pb51,*gpio01,*gpio02);
+
+    printf("pb50=%x pb51=%x gpi01=%08x gpi02=%08x\n",
+    		pb50,pb51,*gpio01,*gpio02);
+    counter++;
+  }
+
+  print("Finished.\n\r");
+  fflush(stdout);
+
+  cleanup_platform();
+
+  return 0;
+}

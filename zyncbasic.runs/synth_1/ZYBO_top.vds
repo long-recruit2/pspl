@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon Aug 26 21:40:06 2019
-# Process ID: 3596
+# Start of session at: Wed Aug 28 23:49:07 2019
+# Process ID: 14636
 # Current directory: C:/Users/long-/Git/zyncbasic/zyncbasic.runs/synth_1
 # Command line: vivado.exe -log ZYBO_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ZYBO_top.tcl
 # Log file: C:/Users/long-/Git/zyncbasic/zyncbasic.runs/synth_1/ZYBO_top.vds
@@ -18,11 +18,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 30360 
+INFO: Helper process launched with PID 25716 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 422.859 ; gain = 109.785
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 424.066 ; gain = 110.199
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'ZYBO_top' [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/zybo_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ZYBO_top' [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/zybo_top.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'IBUFG' [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19897]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
@@ -1425,10 +1425,10 @@ INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (38#1) [c:/Users/l
 INFO: [Synth 8-256] done synthesizing module 'Zynq_PS_rst_ps7_0_100M_0' (39#1) [c:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/bd/Zynq_PS/ip/Zynq_PS_rst_ps7_0_100M_0/synth/Zynq_PS_rst_ps7_0_100M_0.vhd:74]
 WARNING: [Synth 8-350] instance 'rst_ps7_0_100M' of module 'Zynq_PS_rst_ps7_0_100M_0' requires 10 connections, but only 7 given [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:310]
 INFO: [Synth 8-6155] done synthesizing module 'Zynq_PS' (40#1) [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:13]
-INFO: [Synth 8-6157] synthesizing module 'HEX2OLED_module' [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/hex2oled.v:6]
+INFO: [Synth 8-6157] synthesizing module 'HEX2OLED_module' [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/hex2oled.sv:11]
 	Parameter PULSEW bound to: 10416 - type: integer 
 	Parameter PULSEW2 bound to: 5208 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'UART_TX_module' [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/uart.v:203]
+INFO: [Synth 8-6157] synthesizing module 'UART_TX_module' [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/uart_tx.sv:7]
 	Parameter PULSEW bound to: 10416 - type: integer 
 	Parameter PULSEW2 bound to: 5208 - type: integer 
 	Parameter STT_WAIT bound to: 9 - type: integer 
@@ -1442,18 +1442,12 @@ INFO: [Synth 8-6157] synthesizing module 'UART_TX_module' [C:/Users/long-/Git/zy
 	Parameter STT_SND6 bound to: 6 - type: integer 
 	Parameter STT_SND7 bound to: 7 - type: integer 
 	Parameter STT_STOP bound to: 8 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/uart.v:233]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/uart.v:234]
-INFO: [Synth 8-6155] done synthesizing module 'UART_TX_module' (41#1) [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/uart.v:203]
-INFO: [Synth 8-226] default block is never used [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/hex2oled.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'HEX2OLED_module' (42#1) [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/hex2oled.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ZYBO_top' (43#1) [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/zybo_top.v:23]
-WARNING: [Synth 8-3917] design ZYBO_top has port jd9 driven by constant 0
-WARNING: [Synth 8-3917] design ZYBO_top has port jd10 driven by constant 0
-WARNING: [Synth 8-3917] design ZYBO_top has port je1 driven by constant 1
-WARNING: [Synth 8-3917] design ZYBO_top has port je2 driven by constant 0
-WARNING: [Synth 8-3917] design ZYBO_top has port je7 driven by constant 0
-WARNING: [Synth 8-3917] design ZYBO_top has port je8 driven by constant 0
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/uart_tx.sv:38]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/uart_tx.sv:39]
+INFO: [Synth 8-6155] done synthesizing module 'UART_TX_module' (41#1) [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/uart_tx.sv:7]
+INFO: [Synth 8-226] default block is never used [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/hex2oled.sv:34]
+INFO: [Synth 8-6155] done synthesizing module 'HEX2OLED_module' (42#1) [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/hex2oled.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'ZYBO_top' (43#1) [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/zybo_top.sv:23]
 WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_aclk
 WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_resetn
 WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_vect_in[1]
@@ -1556,7 +1550,7 @@ WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_17_b2s_rd_cmd_fsm has
 WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_17_b2s_rd_cmd_fsm has unconnected port s_arlen[2]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 598.164 ; gain = 285.090
+Finished RTL Elaboration : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 598.133 ; gain = 284.266
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1569,13 +1563,13 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 598.164 ; gain = 285.090
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 598.133 ; gain = 284.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 598.164 ; gain = 285.090
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 598.133 ; gain = 284.266
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 398 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -1594,6 +1588,425 @@ Finished Parsing XDC File [c:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1
 Parsing XDC File [c:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/bd/Zynq_PS/ip/Zynq_PS_rst_ps7_0_100M_0/Zynq_PS_rst_ps7_0_100M_0.xdc] for cell 'Zynq_PS_i/rst_ps7_0_100M/U0'
 Finished Parsing XDC File [c:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/bd/Zynq_PS/ip/Zynq_PS_rst_ps7_0_100M_0/Zynq_PS_rst_ps7_0_100M_0.xdc] for cell 'Zynq_PS_i/rst_ps7_0_100M/U0'
 Parsing XDC File [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ja1'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:183]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:183]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja2'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja3'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja4'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja7'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:187]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:187]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja8'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:188]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:188]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja9'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:189]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:189]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja10'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:190]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:190]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja1'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:191]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:191]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja2'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:192]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:192]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja3'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:193]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:193]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja4'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja7'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja8'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:196]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:196]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja9'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:197]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:197]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja10'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja1'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:199]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports ja1]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:199]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'ja2'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:200]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports ja2]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:200]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'ja3'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:201]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports ja3]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:201]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'ja4'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:202]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports ja4]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:202]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'ja7'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:203]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports ja7]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:203]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'ja8'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:204]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports ja8]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:204]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'ja9'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:205]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports ja9]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:205]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'ja10'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:206]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports ja10]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:206]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'ja1'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:207]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports ja1]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:207]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'ja2'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:208]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports ja2]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:208]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'ja3'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:209]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports ja3]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:209]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'ja4'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:210]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports ja4]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:210]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'ja7'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:211]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports ja7]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:211]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'ja8'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:212]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports ja8]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:212]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'ja9'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:213]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports ja9]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:213]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'ja10'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:214]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports ja10]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:214]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jb1'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:217]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:217]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb2'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:218]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:218]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb3'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:219]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:219]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb4'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:220]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:220]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb7'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:221]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:221]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb8'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:222]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:222]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb9'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:223]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:223]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb10'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:224]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:224]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb1'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:225]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:225]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb2'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:226]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:226]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb3'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:227]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:227]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb4'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:228]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:228]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb7'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:229]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:229]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb8'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:230]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:230]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb9'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:231]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:231]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb10'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:232]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:232]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb1'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:233]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jb1]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:233]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jb2'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:234]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jb2]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:234]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jb3'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:235]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jb3]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:235]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jb4'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:236]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jb4]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:236]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jb7'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:237]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jb7]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:237]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jb8'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:238]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jb8]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:238]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jb9'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:239]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jb9]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:239]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jb10'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:240]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jb10]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:240]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jb1'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:241]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jb1]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:241]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jb2'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:242]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jb2]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:242]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jb3'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:243]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jb3]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:243]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jb4'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:244]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jb4]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:244]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jb7'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:245]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jb7]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:245]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jb8'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:246]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jb8]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:246]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jb9'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:247]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jb9]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:247]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jb10'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:248]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jb10]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:248]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jc2'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:251]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:251]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc3'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:252]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:252]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc4'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:253]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:253]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc7'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:254]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:254]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc8'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:255]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:255]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc9'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:256]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:256]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc10'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:257]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:257]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc1'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:258]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:258]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc2'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:259]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:259]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc3'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:260]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:260]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc4'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:261]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:261]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc7'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:262]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:262]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc8'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:263]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:263]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc9'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:264]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:264]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc10'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:265]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:265]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc1'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:266]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jc1]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:266]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jc2'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:267]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jc2]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:267]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jc3'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:268]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jc3]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:268]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jc4'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:269]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jc4]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:269]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jc7'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:270]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jc7]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:270]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jc8'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:271]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jc8]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:271]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jc9'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:272]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jc9]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:272]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jc10'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:273]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jc10]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:273]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jc1'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:274]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jc1]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:274]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jc2'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:275]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jc2]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:275]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jc3'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:276]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jc3]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:276]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jc4'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:277]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jc4]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:277]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jc7'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:278]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jc7]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:278]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jc8'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:279]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jc8]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:279]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jc9'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:280]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jc9]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:280]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jc10'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:281]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jc10]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:281]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'jd1'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:284]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:284]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd2'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:285]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:285]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd3'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:286]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:286]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd4'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:287]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:287]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd7'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:288]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:288]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:288]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:289]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:290]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:291]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:292]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:293]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:294]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:295]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:296]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:297]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:298]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:299]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jd1]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:300]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jd2]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:301]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jd3]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:302]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jd4]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:303]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jd7]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:304]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jd8]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:305]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jd9]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:306]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports jd10]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:307]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jd1]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:308]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jd2]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:309]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jd3]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:310]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jd4]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:311]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jd7]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:312]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jd8]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:313]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jd9]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:314]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports jd10]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:315]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:318]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:319]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:320]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:321]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:322]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:323]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:324]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:325]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:326]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:327]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:328]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:329]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:330]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:331]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:332]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:333]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports je1]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:334]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports je2]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:335]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports je3]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:336]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports je4]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:337]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports je7]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:338]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports je8]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:339]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports je9]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:340]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports je10]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:341]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports je1]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:342]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports je2]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:343]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports je3]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:344]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports je4]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:345]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports je7]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:346]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports je8]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:347]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports je9]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:348]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports je10]'. [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc:349]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
 Finished Parsing XDC File [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ZYBO_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/ZYBO_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -1609,16 +2022,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IBUFG => IBUF: 1 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 866.914 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 867.754 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 866.914 ; gain = 553.840
+Finished Constraint Validation : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 867.754 ; gain = 553.887
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 866.914 ; gain = 553.840
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 867.754 ; gain = 553.887
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1633,7 +2046,7 @@ Applied set_property DONT_TOUCH = true for Zynq_PS_i/processing_system7_0/inst. 
 Applied set_property DONT_TOUCH = true for Zynq_PS_i/axi_gpio_0/U0. (constraint file  C:/Users/long-/Git/zyncbasic/zyncbasic.runs/synth_1/dont_touch.xdc, line 28).
 Applied set_property DONT_TOUCH = true for Zynq_PS_i/rst_ps7_0_100M/U0. (constraint file  C:/Users/long-/Git/zyncbasic/zyncbasic.runs/synth_1/dont_touch.xdc, line 36).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 866.914 ; gain = 553.840
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 867.754 ; gain = 553.887
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -1663,7 +2076,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'axi_protocol_converter_v2_1_17_b2s_rd_cmd_fsm', re-encoding will not be performed
 INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'UART_TX_module', re-encoding will not be performed
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 866.914 ; gain = 553.840
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 867.754 ; gain = 553.887
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2000,121 +2413,114 @@ INFO: [Synth 8-4471] merging register 'bus2ip_reset_reg' into 'AXI_LITE_IPIF_I/I
 WARNING: [Synth 8-6014] Unused sequential element bus2ip_reset_reg was removed.  [c:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/bd/Zynq_PS/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:1684]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/bd/Zynq_PS/ipshared/6020/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/bd/Zynq_PS/ipshared/6020/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
+WARNING: [Synth 8-6014] Unused sequential element disp/uart0tx/uarto_reg_reg was removed.  [C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/uart_tx.sv:36]
 INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "sw_r" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-3917] design ZYBO_top has port jd9 driven by constant 0
-WARNING: [Synth 8-3917] design ZYBO_top has port jd10 driven by constant 0
-WARNING: [Synth 8-3917] design ZYBO_top has port je1 driven by constant 1
-WARNING: [Synth 8-3917] design ZYBO_top has port je2 driven by constant 0
-WARNING: [Synth 8-3917] design ZYBO_top has port je7 driven by constant 0
-WARNING: [Synth 8-3917] design ZYBO_top has port je8 driven by constant 0
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\disp/txch_r_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\disp/uart0tx/data_reg[7] )
 WARNING: [Synth 8-3332] Sequential element (disp/txch_r_reg[7]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/txch_r_reg[6]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/txch_r_reg[5]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/txch_r_reg[4]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/txch_r_reg[3]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/txch_r_reg[2]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/txch_r_reg[1]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/txch_r_reg[0]) is unused and will be removed from module ZYBO_top.
 WARNING: [Synth 8-3332] Sequential element (disp/uart0tx/data_reg[7]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/uart0tx/data_reg[6]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/uart0tx/data_reg[5]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/uart0tx/data_reg[4]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/uart0tx/data_reg[3]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/uart0tx/data_reg[2]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/uart0tx/data_reg[1]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/uart0tx/data_reg[0]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[127]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[126]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[125]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[124]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[123]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[122]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[121]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[120]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[119]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[118]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[117]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[116]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[115]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[114]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[113]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[112]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[111]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[110]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[109]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[108]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[107]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[106]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[105]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[104]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[103]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[102]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[101]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[100]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[99]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[98]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[97]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[96]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[95]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[94]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[93]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[92]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[91]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[90]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[89]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[88]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[87]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[86]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[85]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[84]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[83]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[82]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[81]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[80]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[79]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[78]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[77]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[76]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[75]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[74]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[73]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[72]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[71]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[70]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[69]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[68]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[67]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[66]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[65]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[64]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[63]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[62]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[61]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[60]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[59]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[58]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[57]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[56]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[55]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[54]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[53]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[52]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[51]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[50]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[49]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[48]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[47]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[46]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[45]) is unused and will be removed from module ZYBO_top.
+WARNING: [Synth 8-3332] Sequential element (disp/shiftbuf_reg[44]) is unused and will be removed from module ZYBO_top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (Zynq_PS_i/axi_gpio_0/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (Zynq_PS_i/axi_gpio_0/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (Zynq_PS_i/axi_gpio_0/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (Zynq_PS_i/axi_gpio_0/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1] )
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[16].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[17].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[18].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[19].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[20].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[21].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[22].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[23].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[24].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[25].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[26].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[27].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[28].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[29].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[30].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[31].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[16].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[17].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[18].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[19].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[20].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[21].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[22].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[23].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[24].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[25].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[26].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[27].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[28].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[29].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[30].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[31].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[16].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[17].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[18].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[19].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[20].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[21].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[22].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[23].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[24].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[25].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[26].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[27].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[28].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[29].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[30].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[31].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3886] merging instance 'Zynq_PS_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r.r_pipe/aresetn_d_reg[0]' (FDR) to 'Zynq_PS_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/aresetn_d_reg[0]'
 INFO: [Synth 8-3886] merging instance 'Zynq_PS_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/aresetn_d_reg[0]' (FDR) to 'Zynq_PS_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/aresetn_d_reg[0]'
 INFO: [Synth 8-3886] merging instance 'Zynq_PS_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/aresetn_d_reg[1]' (FDR) to 'Zynq_PS_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/aresetn_d_reg[1]'
@@ -2124,7 +2530,7 @@ INFO: [Synth 8-3886] merging instance 'Zynq_PS_i/ps7_0_axi_periph/s00_couplers/a
 INFO: [Synth 8-3886] merging instance 'Zynq_PS_i/rst_ps7_0_100M/U0/SEQ/pr_dec_reg[1]' (FD) to 'Zynq_PS_i/rst_ps7_0_100M/U0/SEQ/bsr_dec_reg[1]'
 INFO: [Synth 8-3886] merging instance 'Zynq_PS_i/rst_ps7_0_100M/U0/SEQ/bsr_dec_reg[1]' (FD) to 'Zynq_PS_i/rst_ps7_0_100M/U0/SEQ/core_dec_reg[1]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 866.914 ; gain = 553.840
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 867.754 ; gain = 553.887
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2136,13 +2542,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 995.359 ; gain = 682.285
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:10 ; elapsed = 00:01:16 . Memory (MB): peak = 993.879 ; gain = 680.012
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 1056.809 ; gain = 743.734
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:18 . Memory (MB): peak = 1055.191 ; gain = 741.324
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2154,7 +2560,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:01:20 . Memory (MB): peak = 1065.832 ; gain = 752.758
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:21 . Memory (MB): peak = 1064.211 ; gain = 750.344
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2195,7 +2601,7 @@ INFO: [Synth 8-4618] Found max_fanout attribute set to 20 on net \inst/gen_axili
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:14 ; elapsed = 00:01:21 . Memory (MB): peak = 1065.832 ; gain = 752.758
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 1064.211 ; gain = 750.344
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2208,7 +2614,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:14 ; elapsed = 00:01:21 . Memory (MB): peak = 1065.832 ; gain = 752.758
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 1064.211 ; gain = 750.344
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2220,37 +2626,29 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:14 ; elapsed = 00:01:22 . Memory (MB): peak = 1065.832 ; gain = 752.758
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:23 . Memory (MB): peak = 1064.211 ; gain = 750.344
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:14 ; elapsed = 00:01:22 . Memory (MB): peak = 1065.832 ; gain = 752.758
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:01:23 . Memory (MB): peak = 1064.211 ; gain = 750.344
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:14 ; elapsed = 00:01:22 . Memory (MB): peak = 1065.832 ; gain = 752.758
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:23 . Memory (MB): peak = 1064.211 ; gain = 750.344
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:14 ; elapsed = 00:01:22 . Memory (MB): peak = 1065.832 ; gain = 752.758
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 1064.211 ; gain = 750.344
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
-
-Static Shift Register Report:
-+------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name | RTL Name              | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|ZYBO_top    | disp/shiftbuf_reg[63] | 8      | 3     | YES          | NO                 | YES               | 3      | 0       | 
-+------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-
 
 Dynamic Shift Register Report:
 +------------+----------------+--------+------------+--------+---------+--------+--------+--------+
@@ -2284,29 +2682,29 @@ Report Cell Usage:
 |1     |BIBUF   |   130|
 |2     |BUFG    |     2|
 |3     |CARRY4  |    30|
-|4     |LUT1    |   140|
-|5     |LUT2    |    48|
-|6     |LUT3    |   364|
-|7     |LUT4    |    71|
-|8     |LUT5    |   175|
-|9     |LUT6    |   268|
+|4     |LUT1    |   141|
+|5     |LUT2    |    49|
+|6     |LUT3    |   253|
+|7     |LUT4    |    75|
+|8     |LUT5    |   177|
+|9     |LUT6    |   239|
 |10    |PS7     |     1|
 |11    |SRL16   |     1|
-|12    |SRL16E  |    21|
+|12    |SRL16E  |    18|
 |13    |SRLC32E |    47|
 |14    |FDR     |   264|
-|15    |FDRE    |  1127|
-|16    |FDSE    |   124|
+|15    |FDRE    |   996|
+|16    |FDSE    |   123|
 |17    |IBUF    |     8|
 |18    |IBUFG   |     1|
-|19    |OBUF    |    11|
+|19    |OBUF    |     4|
 +------+--------+------+
 
 Report Instance Areas: 
 +------+---------------------------------------------------+---------------------------------------------------------------+------+
 |      |Instance                                           |Module                                                         |Cells |
 +------+---------------------------------------------------+---------------------------------------------------------------+------+
-|1     |top                                                |                                                               |  2833|
+|1     |top                                                |                                                               |  2559|
 |2     |  Zynq_PS_i                                        |Zynq_PS                                                        |  2390|
 |3     |    axi_gpio_0                                     |Zynq_PS_axi_gpio_0_0                                           |   909|
 |4     |      U0                                           |axi_gpio                                                       |   909|
@@ -2351,15 +2749,15 @@ Report Instance Areas:
 |43    |          \ACTIVE_LOW_EXT.ACT_LO_EXT               |cdc_sync__parameterized0_0                                     |     6|
 |44    |        SEQ                                        |sequence_psr                                                   |    38|
 |45    |          SEQ_COUNTER                              |upcnt_n                                                        |    13|
-|46    |  disp                                             |HEX2OLED_module                                                |   356|
-|47    |    uart0tx                                        |UART_TX_module                                                 |    96|
+|46    |  disp                                             |HEX2OLED_module                                                |    89|
+|47    |    uart0tx                                        |UART_TX_module                                                 |    73|
 +------+---------------------------------------------------+---------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:14 ; elapsed = 00:01:22 . Memory (MB): peak = 1065.832 ; gain = 752.758
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 1064.211 ; gain = 750.344
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 167 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:01:11 . Memory (MB): peak = 1065.832 ; gain = 484.008
-Synthesis Optimization Complete : Time (s): cpu = 00:01:14 ; elapsed = 00:01:22 . Memory (MB): peak = 1065.832 ; gain = 752.758
+Synthesis finished with 0 errors, 0 critical warnings and 271 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:01:11 . Memory (MB): peak = 1064.211 ; gain = 480.723
+Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 1064.211 ; gain = 750.344
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 304 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -2372,11 +2770,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-408 Infos, 189 Warnings, 0 Critical Warnings and 0 Errors encountered.
+309 Infos, 376 Warnings, 159 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:25 . Memory (MB): peak = 1065.832 ; gain = 762.609
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1064.211 ; gain = 760.754
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/long-/Git/zyncbasic/zyncbasic.runs/synth_1/ZYBO_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ZYBO_top_utilization_synth.rpt -pb ZYBO_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1065.832 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Aug 26 21:41:41 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1064.211 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 28 23:50:43 2019...

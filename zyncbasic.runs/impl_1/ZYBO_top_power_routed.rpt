@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Mon Aug 26 21:43:17 2019
+| Date             : Wed Aug 28 23:52:24 2019
 | Host             : DESKTOP-7NQ195N running 64-bit major release  (build 9200)
 | Command          : report_power -file ZYBO_top_power_routed.rpt -pb ZYBO_top_power_summary_routed.pb -rpx ZYBO_top_power_routed.rpx
 | Design           : ZYBO_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.554        |
+| Total On-Chip Power (W)  | 1.552        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.413        |
+| Dynamic (W)              | 1.411        |
 | Device Static (W)        | 0.141        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 67.1         |
@@ -53,17 +53,17 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.006 |        4 |       --- |             --- |
-| Slice Logic             |     0.002 |     2590 |       --- |             --- |
-|   LUT as Logic          |     0.002 |      718 |     53200 |            1.35 |
-|   Register              |    <0.001 |     1412 |    106400 |            1.33 |
+| Slice Logic             |     0.002 |     2322 |       --- |             --- |
+|   LUT as Logic          |     0.002 |      637 |     53200 |            1.20 |
+|   Register              |    <0.001 |     1280 |    106400 |            1.20 |
 |   CARRY4                |    <0.001 |       30 |     13300 |            0.23 |
-|   LUT as Shift Register |    <0.001 |       63 |     17400 |            0.36 |
-|   Others                |     0.000 |      202 |       --- |             --- |
-| Signals                 |     0.003 |     1932 |       --- |             --- |
-| I/O                     |     0.002 |       19 |       125 |           15.20 |
+|   LUT as Shift Register |    <0.001 |       60 |     17400 |            0.34 |
+|   Others                |     0.000 |      201 |       --- |             --- |
+| Signals                 |     0.003 |     1785 |       --- |             --- |
+| I/O                     |    <0.001 |       12 |       125 |            9.60 |
 | PS7                     |     1.400 |        1 |       --- |             --- |
 | Static Power            |     0.141 |          |           |                 |
-| Total                   |     1.554 |          |           |                 |
+| Total                   |     1.552 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.026 |       0.012 |      0.014 |
+| Vccint    |       1.000 |     0.025 |       0.011 |      0.014 |
 | Vccaux    |       1.800 |     0.015 |       0.000 |      0.015 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -149,8 +149,8 @@ Table of Contents
 +--------------------------------------------------+-----------+
 | Name                                             | Power (W) |
 +--------------------------------------------------+-----------+
-| ZYBO_top                                         |     1.413 |
-|   Zynq_PS_i                                      |     1.409 |
+| ZYBO_top                                         |     1.411 |
+|   Zynq_PS_i                                      |     1.410 |
 |     axi_gpio_0                                   |     0.004 |
 |       U0                                         |     0.004 |
 |         AXI_LITE_IPIF_I                          |    <0.001 |
@@ -171,7 +171,7 @@ Table of Contents
 |                 cmd_translator_0                 |    <0.001 |
 |                   incr_cmd_0                     |    <0.001 |
 |                   wrap_cmd_0                     |    <0.001 |
-|               RD.r_channel_0                     |    <0.001 |
+|               RD.r_channel_0                     |     0.001 |
 |                 rd_data_fifo_0                   |    <0.001 |
 |                 transaction_fifo_0               |    <0.001 |
 |               SI_REG                             |     0.002 |
@@ -194,7 +194,7 @@ Table of Contents
 |           ACTIVE_LOW_EXT.ACT_LO_EXT              |    <0.001 |
 |         SEQ                                      |    <0.001 |
 |           SEQ_COUNTER                            |    <0.001 |
-|   disp                                           |     0.002 |
+|   disp                                           |    <0.001 |
 |     uart0tx                                      |    <0.001 |
 +--------------------------------------------------+-----------+
 

@@ -10,6 +10,7 @@
 #include "xgpiops.h" // for PS GPIO(MIO)
 #include "xgpio.h"   // for PL GPIO
 
+// PS only pins MIO
 #define LD_MIO7 7
 #define BTN_MIO50 50
 #define BTN_MIO51 51
@@ -28,7 +29,6 @@ int main(){
   int run;
   int r;
   int i;
-  int ld,pb50,pb51,val01i,val01o;
 
   // Initialize the platform
   init_platform();
@@ -51,20 +51,31 @@ int main(){
   XGpioPs_SetOutputEnablePin(&gpiops,BTN_MIO50,0);
   XGpioPs_SetOutputEnablePin(&gpiops,BTN_MIO51,0);
 
+  int ld,pb50,pb51,val01i,val01o,val02i,val02o;
+
   counter=0;
   run=1;
   while (run) {
     for (i=0;i<DELAYLOOP;i++) {
-      pb50=XGpioPs_ReadPin(&gpiops,BTN_MIO50); // read BTN MIO50
-      pb51=XGpioPs_ReadPin(&gpiops,BTN_MIO51); // read BTN MIO51
+    	// pb50=XGpioPs_ReadPin(&gpiops,BTN_MIO50); // read BTN MIO50
+    	// pb51=XGpioPs_ReadPin(&gpiops,BTN_MIO51); // read BTN MIO51
+
+      //  assign  arm_gpi01={12'b0,sw_r,12'b0,btn_r};
       val01i=*gpio01; // read SW[3:0] & BTN[3:0]
       val01o=(pb51?8:0)|(pb50?4:0)|(counter&3);
       *gpio01=val01o; // write LD[3:0]
-      ld=(val01i&15)?1:0;
-      XGpioPs_WritePin(&gpiops,LD_MIO7,ld); // write LD MIO07
-      if (pb50!=0 && pb51!=0) run=0;
+
+      val02i=*gpio02;
       *gpio02=counter;
+
+      // ld=(val01i&15)?1:0;
+      // XGpioPs_WritePin(&gpiops,LD_MIO7,ld); // write LD MIO07
+      if (pb50!=0 && pb51!=0) run=0;
     }
+
+    printf("pb50=%x pb51=%x val01i=%08x val01o=%08x val02i=%08x val02o=%08x\n",
+    		pb50,pb51,val01i,val01o, val02i, counter);
+
     printf("pb50=%x pb51=%x gpi01=%08x gpi02=%08x\n",
     		pb50,pb51,*gpio01,*gpio02);
     counter++;

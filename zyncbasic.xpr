@@ -68,8 +68,40 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/zynqbasic/hex2oled.v">
+      <File Path="$PSRCDIR/sources_1/imports/zynqbasic/hex2oled.sv">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/zynqbasic/uart_tx.sv">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/zynqbasic/zybo_top.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/zynqbasic/zybo_top.sv"/>
+          <Attr Name="ImportTime" Val="1566991132"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/zynqbasic/uart.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/zynqbasic/hex2oled.v">
+        <FileInfo SFType="SVerilog">
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Desktop/zynqbasic/hex2oled.v"/>
           <Attr Name="ImportTime" Val="1475818154"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -78,7 +110,8 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/zynqbasic/uart.v">
-        <FileInfo>
+        <FileInfo SFType="SVerilog">
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Desktop/zynqbasic/uart.v"/>
           <Attr Name="ImportTime" Val="1475396968"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -86,10 +119,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/zynqbasic/zybo_top.v">
+      <File Path="$PSRCDIR/sources_1/imports/zynqbasic/uart_rx.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Desktop/zynqbasic/zybo_top.v"/>
-          <Attr Name="ImportTime" Val="1475814726"/>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

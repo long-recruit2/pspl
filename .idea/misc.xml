@@ -1,0 +1,3344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SVCompilerDirectivesDefines">
+    <option name="define">
+      <map>
+        <entry key="AKRPS">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="2368" />
+                    <option name="replacementList" value="! // ###MBAC###" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="6120" />
+                    <option name="replacementList" value="! // ###MBAC###" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ASSIGN_MARKED_DEBUG">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="179171" />
+                    <option name="parameters">
+                      <list>
+                        <Parameter>
+                          <option name="name" value="ERR_BIT" />
+                        </Parameter>
+                        <Parameter>
+                          <option name="name" value="DISPLAY_NETNAME" />
+                        </Parameter>
+                      </list>
+                    </option>
+                    <option name="replacementList" value="reg DISPLAY_NETNAME;&#10;  always@(posedge aclk) DISPLAY_NETNAME &lt;= pc_status[ERR_BIT];" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AUXM_ADDR_WIDTH">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="148794" />
+                    <option name="replacementList" value="&quot;AXI_AUXM_ADDR_WIDTH. Parameter ADDR_WIDTH must be between 32 and 64 bits inclusive&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AUXM_AXI4LITE_DATA_WIDTH">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="148915" />
+                    <option name="replacementList" value="&quot;AXI4LITE_AUXM_DATA_WIDTH. Parameter DATA_WIDTH must be either 32 or 64.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AUXM_DATA_WIDTH">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="149025" />
+                    <option name="replacementList" value="&quot;AXI_AUXM_DATA_WIDTH. Parameter DATA_WIDTH must be 32, 64, 128, 256, 512 or 1024&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AUXM_EXCL_OVERFLOW">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="149143" />
+                    <option name="replacementList" value="&quot;AXI_AUXM_EXCL_OVERFLOW. Exclusive access monitor overflow, increase EXMON_WIDTH parameter.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AUXM_EXMON_WIDTH">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="149272" />
+                    <option name="replacementList" value="&quot;AXI_AUXM_EXMON_WIDTH. Parameter EXMON_WIDTH must be greater than or equal to 1&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AUXM_MAXRBURSTS">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="149389" />
+                    <option name="replacementList" value="&quot;AXI_AUXM_MAXRBURSTS. Parameter MAXRBURSTS must be greater than or equal to 1&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AUXM_MAXWBURSTS">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="149504" />
+                    <option name="replacementList" value="&quot;AXI_AUXM_MAXWBURSTS. Parameter MAXWBURSTS must be greater than or equal to 1&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AUXM_RCAM_OVERFLOW">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="149619" />
+                    <option name="replacementList" value="&quot;AXI_AUXM_RCAM_OVERFLOW. Read CAM overflow, increase Maximum outstanding READ Transactions per ID (MAX_RD_BURSTS) parameter.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AUXM_RCAM_UNDERFLOW">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="149781" />
+                    <option name="replacementList" value="&quot;AXI_AUXM_RCAM_UNDERFLOW. Read CAM underflow.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AUXM_WCAM_OVERFLOW">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="149864" />
+                    <option name="replacementList" value="&quot;AXI_AUXM_WCAM_OVERFLOW. Write CAM overflow, increase Maximum outstanding WRITE Transactions per ID (MAX_WR_BURSTS) parameter.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AUXM_WCAM_UNDERFLOW">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="150028" />
+                    <option name="replacementList" value="&quot;AXI_AUXM_WCAM_UNDERFLOW. Write CAM underflow&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ABURST_FIXED">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94967" />
+                    <option name="replacementList" value="2'b00" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ABURST_INCR">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="95006" />
+                    <option name="replacementList" value="2'b01" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ABURST_WRAP">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="95046" />
+                    <option name="replacementList" value="2'b10" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ALEN_1">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="93888" />
+                    <option name="replacementList" value="8'b00000000" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ALEN_10">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94293" />
+                    <option name="replacementList" value="8'b00001001" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ALEN_11">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94338" />
+                    <option name="replacementList" value="8'b00001010" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ALEN_12">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94383" />
+                    <option name="replacementList" value="8'b00001011" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ALEN_13">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94428" />
+                    <option name="replacementList" value="8'b00001100" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ALEN_14">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94473" />
+                    <option name="replacementList" value="8'b00001101" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ALEN_15">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94518" />
+                    <option name="replacementList" value="8'b00001110" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ALEN_16">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94563" />
+                    <option name="replacementList" value="8'b00001111" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ALEN_2">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="93933" />
+                    <option name="replacementList" value="8'b00000001" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ALEN_3">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="93978" />
+                    <option name="replacementList" value="8'b00000010" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ALEN_4">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94023" />
+                    <option name="replacementList" value="8'b00000011" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ALEN_5">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94068" />
+                    <option name="replacementList" value="8'b00000100" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ALEN_6">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94113" />
+                    <option name="replacementList" value="8'b00000101" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ALEN_7">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94158" />
+                    <option name="replacementList" value="8'b00000110" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ALEN_8">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94203" />
+                    <option name="replacementList" value="8'b00000111" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ALEN_9">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94248" />
+                    <option name="replacementList" value="8'b00001000" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ALOCK_EXCL">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="95105" />
+                    <option name="replacementList" value="1'b1" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ASIZE_1024">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94907" />
+                    <option name="replacementList" value="3'b111" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ASIZE_128">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94787" />
+                    <option name="replacementList" value="3'b100" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ASIZE_16">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94667" />
+                    <option name="replacementList" value="3'b001" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ASIZE_256">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94827" />
+                    <option name="replacementList" value="3'b101" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ASIZE_32">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94707" />
+                    <option name="replacementList" value="3'b010" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ASIZE_512">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94867" />
+                    <option name="replacementList" value="3'b110" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ASIZE_64">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94747" />
+                    <option name="replacementList" value="3'b011" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_ASIZE_8">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="94627" />
+                    <option name="replacementList" value="3'b000" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_MESSAGES">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="148768" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_RESP_DECERR">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="95287" />
+                    <option name="replacementList" value="2'b11" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_RESP_EXOKAY">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="95209" />
+                    <option name="replacementList" value="2'b01" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_RESP_OKAY">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="95170" />
+                    <option name="replacementList" value="2'b00" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_RESP_SLVERR">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="95248" />
+                    <option name="replacementList" value="2'b10" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="AXI4PC_TYPES">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="93850" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRL_CACTIVE_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="150111" />
+                    <option name="replacementList" value="&quot;AXI_ERRL_CACTIVE_X: When not in reset, a value of X on CACTIVE is not permitted. Spec: section A9.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRL_CSYSACK_FALL">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="150250" />
+                    <option name="replacementList" value="&quot;AXI_ERRL_CSYSACK_FALL: When CSYSACK transitions from high to low, CSYSREQ must be low. Spec: figure A9-1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRL_CSYSACK_RISE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="150394" />
+                    <option name="replacementList" value="&quot;AXI_ERRL_CSYSACK_RISE: When CSYSACK transitions from low to high, CSYSREQ must be high. Spec: figure A9-1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRL_CSYSACK_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="150539" />
+                    <option name="replacementList" value="&quot;AXI_ERRL_CSYSACK_X: When not in reset, a value of X on CSYSACK is not permitted. Spec: section A9.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRL_CSYSREQ_FALL">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="150678" />
+                    <option name="replacementList" value="&quot;AXI_ERRL_CSYSREQ_FALL: When CSYSREQ transitions from high to low, CSYSACK must be high. Spec: figure A9-1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRL_CSYSREQ_RISE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="150823" />
+                    <option name="replacementList" value="&quot;AXI_ERRL_CSYSREQ_RISE: When CSYSREQ transitions from low to high, CSYSACK must be low. Spec: figure A9-1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRL_CSYSREQ_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="150967" />
+                    <option name="replacementList" value="&quot;AXI_ERRL_CSYSREQ_X: When not in reset, a value of X on CSYSREQ is not permitted. Spec: section A9.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARADDR_BOUNDARY">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="151106" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARADDR_BOUNDARY: A burst must not cross a 4kbyte boundary. Spec: section A3.4.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARADDR_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="151234" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARADDR_STABLE: ARADDR must remain stable when ARVALID is asserted and ARREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARADDR_WRAP_ALIGN">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="151386" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARADDR_WRAP_ALIGN: For a wrapping burst, the start address must be aligned to the size of each transfer. Spec: section A3.4.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARADDR_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="151560" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARADDR_X: When ARVALID is high, a value of X on ARADDR is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARBURST">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="151702" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARBURST: When ARVALID is high, a value of 2'b11 on ARBURST is not permitted. Spec: table A3-3.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARBURST_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="151844" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARBURST_STABLE: ARBURST must remain stable when ARVALID is asserted and ARREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARBURST_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="151998" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARBURST_X: When ARVALID is high, a value of X on ARBURST is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARCACHE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="152142" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARCACHE: When AWVALID is high, a reserved value on ARCACHE is not allowed. Spec: table A4-5.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARCACHE_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="152282" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARCACHE_STABLE: ARCACHE must remain stable when ARVALID is asserted and ARREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARCACHE_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="152436" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARCACHE_X: When ARVALID is high, a value of X on ARCACHE is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARID_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="152580" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARID_STABLE: ARID must remain stable when ARVALID is asserted and ARREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARID_TIEOFF">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="152728" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARID_TIEOFF: ARID must be stable when ID_WIDTH is set to 0.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARID_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="152836" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARID_X: When ARVALID is high, a value of X on ARID is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARLEN_FIXED">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="152974" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARLEN_FIXED: Transactions of burst type FIXED cannot have a length greater than 16 beats. Spec: section A3.4.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARLEN_LOCK">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="153133" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARLEN_LOCK: Exclusive access transactions cannot have a length greater than 16 beats. Spec: section A7.2.4.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARLEN_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="153288" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARLEN_STABLE: ARLEN must remain stable when ARVALID is asserted and ARREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARLEN_WRAP">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="153438" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARLEN_WRAP: For a wrapping burst, the length of the burst must be 2, 4, 8 or 16 transfers. Spec: section A3.4.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARLEN_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="153598" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARLEN_X: When ARVALID is high, a value of X on ARLEN is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARLOCK_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="153738" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARLOCK_STABLE: ARLOCK must remain stable when ARVALID is asserted and ARREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARLOCK_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="153890" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARLOCK_X: When ARVALID is high, a value of X on ARLOCK is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARPROT_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="154032" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARPROT_STABLE: ARPROT must remain stable when ARVALID is asserted and ARREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARPROT_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="154184" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARPROT_X: When ARVALID is high, a value of X on ARPROT is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARQOS_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="154326" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARQOS_STABLE: ARQOS must remain stable when ARVALID is asserted and ARREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARQOS_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="154476" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARQOS_X: When ARVALID is high, a value of X on ARQOS is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARREGION_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="154616" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARREGION_STABLE: ARREGION must remain stable when ARVALID is asserted and ARREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARREGION_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="154772" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARREGION_X: When ARVALID is high, a value of X on ARREGION is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARSIZE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="154918" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARSIZE: The size of any transfer must not exceed the data bus width of either agent in the transaction. Spec: section A3.4.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARSIZE_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="155091" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARSIZE_STABLE: ARSIZE must remain stable when ARVALID is asserted and ARREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARSIZE_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="155243" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARSIZE_X: When ARVALID is high, a value of X on ARSIZE is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARUSER_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="155385" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARUSER_STABLE: ARUSER must remain stable when ARVALID is asserted and ARREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARUSER_TIEOFF">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="155537" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARUSER_TIEOFF: ARUSER must be stable when ARUSER_WIDTH is set to 0.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARUSER_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="155653" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARUSER_X: When ARVALID is high, a value of X on ARUSER is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARVALID_RESET">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="155795" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARVALID_RESET: The earliest point after reset that a master is permitted to begin driving ARVALID, AWVALID, or WVALID HIGH is at a rising ACLK edge after ARESETn is HIGH. Spec: Figure A3-1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARVALID_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="156032" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARVALID_STABLE: Once ARVALID is asserted, it must remain asserted until ARREADY is high. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_ARVALID_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="156190" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_ARVALID_X: When not in reset, a value of X on ARVALID is not permitted. Spec: section A3.1.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWADDR_BOUNDARY">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="156331" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWADDR_BOUNDARY: A burst must not cross a 4kbyte boundary. Spec: section A3.4.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWADDR_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="156459" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWADDR_STABLE: AWADDR must remain stable when AWVALID is asserted and AWREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWADDR_WRAP_ALIGN">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="156611" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWADDR_WRAP_ALIGN: For a wrapping burst, the start address must be aligned to the size of each transfer. Spec: section A3.4.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWADDR_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="156785" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWADDR_X: When AWVALID is high, a value of X on AWADDR is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWBURST">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="156927" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWBURST: When AWVALID is high, a value of 2'b11 on AWBURST is reserved. Spec: table A3-3.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWBURST_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="157064" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWBURST_STABLE: AWBURST must remain stable when AWVALID is asserted and AWREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWBURST_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="157218" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWBURST_X: When AWVALID is high, a value of X on AWBURST is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWCACHE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="157362" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWCACHE: When AWVALID is high, a reserved value on AWCACHE is not allowed. Spec: table A4-5.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWCACHE_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="157502" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWCACHE_STABLE: AWCACHE must remain stable when AWVALID is asserted and AWREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWCACHE_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="157656" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWCACHE_X: When AWVALID is high, a value of X on AWCACHE is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWID_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="157800" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWID_STABLE: AWID must remain stable when AWVALID is asserted and AWREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWID_TIEOFF">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="157948" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWID_TIEOFF: AWID must be stable when ID_WIDTH is set to 0.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWID_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="158056" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWID_X: When AWVALID is high, a value of X on AWID is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWLEN_FIXED">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="158194" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWLEN_FIXED: Transactions of burst type FIXED cannot have a length greater than 16 beats. Spec: section A3.4.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWLEN_LOCK">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="158353" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWLEN_LOCK: Exclusive access transactions cannot have a length greater than 16 beats. Spec: section A7.2.4.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWLEN_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="158508" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWLEN_STABLE: AWLEN must remain stable when AWVALID is asserted and AWREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWLEN_WRAP">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="158658" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWLEN_WRAP: For a wrapping burst, the length of the burst must be 2, 4, 8 or 16 transfers. Spec: section A3.4.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWLEN_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="158818" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWLEN_X: When AWVALID is high, a value of X on AWLEN is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWLOCK_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="158958" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWLOCK_STABLE: AWLOCK must remain stable when AWVALID is asserted and AWREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWLOCK_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="159110" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWLOCK_X: When AWVALID is high, a value of X on AWLOCK is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWPROT_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="159252" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWPROT_STABLE: AWPROT must remain stable when AWVALID is asserted and AWREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWPROT_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="159404" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWPROT_X: When AWVALID is high, a value of X on AWPROT is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWQOS_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="159546" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWQOS_STABLE: AWQOS must remain stable when AWVALID is asserted and AWREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWQOS_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="159696" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWQOS_X: When AWVALID is high, a value of X on AWQOS is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWREGION_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="159836" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWREGION_STABLE: AWREGION must remain stable when ARVALID is asserted and AWREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWREGION_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="159992" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWREGION_X: When AWVALID is high, a value of X on AWREGION is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWSIZE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="160138" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWSIZE: The size of any transfer must not exceed the data bus width of either agent in the transaction. Spec: section A3.4.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWSIZE_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="160311" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWSIZE_STABLE: AWSIZE must remain stable when AWVALID is asserted and AWREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWSIZE_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="160463" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWSIZE_X: When AWVALID is high, a value of X on AWSIZE is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWUSER_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="160605" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWUSER_STABLE: AWUSER must remain stable when AWVALID is asserted and AWREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWUSER_TIEOFF">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="160757" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWUSER_TIEOFF: AWUSER must be stable when AWUSER_WIDTH is set to 0.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWUSER_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="160873" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWUSER_X: When AWVALID is high, a value of X on AWUSER is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWVALID_RESET">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="161015" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWVALID_RESET: The earliest point after reset that a master is permitted to begin driving ARVALID, AWVALID, or WVALID HIGH is at a rising ACLK edge after ARESETn is HIGH. Spec: Figure A3-1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWVALID_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="161252" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWVALID_STABLE: Once AWVALID is asserted, it must remain asserted until AWREADY is high. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_AWVALID_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="161410" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_AWVALID_X: When not in reset, a value of X on AWVALID is not permitted. Spec: section A3.1.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_BREADY_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="161551" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_BREADY_X: When not in reset, a value of X on BREADY is not permitted. Spec: section A3.1.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_EXCL_ALIGN">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="161690" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_EXCL_ALIGN: The address of an exclusive access must be aligned to the total number of bytes in the transaction. Spec: section A7.2.4.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_EXCL_LEN">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="161871" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_EXCL_LEN: The number of bytes to be transferred in an exclusive access burst must be a power of 2. Spec: section A7.2.4.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_EXCL_MAX">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="162039" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_EXCL_MAX: The maximum number of bytes that can be transferred in an exclusive burst is 128. Spec: section A7.2.4.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_RREADY_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="162200" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_RREADY_X: When not in reset, a value of X on RREADY is not permitted. Spec: section A3.1.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_WDATA_NUM">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="162339" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_WDATA_NUM: The number of write data items must match AWLEN for the corresponding address. Spec: section A3.4.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_WDATA_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="162498" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_WDATA_STABLE: WDATA must remain stable when WVALID is asserted and WREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_WDATA_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="162646" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_WDATA_X: When WVALID is high, a value of X on active byte lanes of WDATA is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_WLAST_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="162806" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_WLAST_STABLE: WLAST must remain stable when WVALID is asserted and WREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_WLAST_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="162954" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_WLAST_X: When WVALID is high, a value of X on WLAST is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_WSTRB">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="163093" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_WSTRB: Write strobes must only be asserted for the correct byte lanes as determined from start address, transfer size and beat number. Spec: section A3.4.3.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_WSTRB_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="163297" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_WSTRB_STABLE: WSTRB must remain stable when WVALID is asserted and WREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_WSTRB_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="163445" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_WSTRB_X: When WVALID is high, a value of X on WSTRB is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_WUSER_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="163584" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_WUSER_STABLE: WUSER must remain stable when WVALID is asserted and WREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_WUSER_TIEOFF">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="163732" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_WUSER_TIEOFF: WUSER must be stable when WUSER_WIDTH is set to 0.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_WUSER_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="163845" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_WUSER_X: When WVALID is high, a value of X on WUSER is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_WVALID_RESET">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="163984" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_WVALID_RESET: The earliest point after reset that a master is permitted to begin driving ARVALID, AWVALID, or WVALID HIGH is at a rising ACLK edge after ARESETn is HIGH. Spec: Figure A3-1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_WVALID_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="164220" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_WVALID_STABLE: Once WVALID is asserted, it must remain asserted until WREADY is high. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRM_WVALID_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="164375" />
+                    <option name="replacementList" value="&quot;AXI_ERRM_WVALID_X: When not in reset, a value of X on WVALID is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_ARREADY_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="164514" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_ARREADY_X: When not in reset, a value of X on ARREADY is not permitted. Spec: section A3.1.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_AWREADY_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="164655" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_AWREADY_X: When not in reset, a value of X on AWREADY is not permitted. Spec: section A3.1.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_AXI4LITE_BRESP_EXOKAY">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="164796" />
+                    <option name="replacementList" value="&quot;AXI4LITE_ERRS_BRESP_EXOKAY: A slave must not give an EXOKAY response on an Axi4Lite interface. Spec: section B1.1.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_AXI4LITE_RRESP_EXOKAY">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="164954" />
+                    <option name="replacementList" value="&quot;AXI4LITE_ERRS_RRESP_EXOKAY: A slave must not give an EXOKAY response on an Axi4Lite interface. Spec: section B1.1.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_BID_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="165112" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_BID_STABLE: BID must remain stable when BVALID is asserted and BREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_BID_TIEOFF">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="165256" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_BID_TIEOFF: BID must be stable when ID_WIDTH is set to 0.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_BID_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="165362" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_BID_X: When BVALID is high, a value of X on BID is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_BRESP_ALL_DONE_EOS">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="165497" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_BRESP_ALL_DONE_EOS: All write transaction addresses must have been matched with corresponding write response.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_BRESP_AW">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="165654" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_BRESP_AW: A slave must not give a write response before the write address. Spec: section A3.3.1 and figure A3-7.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_BRESP_EXOKAY">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="165814" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_BRESP_EXOKAY: An EXOKAY write response can only be given to an exclusive write access. Spec: section A7.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_BRESP_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="165968" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_BRESP_STABLE: BRESP must remain stable when BVALID is asserted and BREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_BRESP_WLAST">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="166116" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_BRESP_WLAST: A slave must only give a write response after the last write data item is transferred. Spec: section A3.3.1 and figure A3-7.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_BRESP_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="166301" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_BRESP_X: When BVALID is high, a value of X on BRESP is not permitted.  Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_BUSER_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="166441" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_BUSER_STABLE: BUSER must remain stable when BVALID is asserted and BREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_BUSER_TIEOFF">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="166589" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_BUSER_TIEOFF: BUSER must be stable when BUSER_WIDTH is set to 0.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_BUSER_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="166702" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_BUSER_X: When BVALID is high, a value of X on BUSER is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_BVALID_RESET">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="166841" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_BVALID_RESET: The earliest point after reset that a master is permitted to begin driving ARVALID, AWVALID, or WVALID HIGH is at a rising ACLK edge after ARESETn is HIGH. Spec: Figure A3-1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_BVALID_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="167077" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_BVALID_STABLE: Once BVALID is asserted, it must remain asserted until BREADY is high. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_BVALID_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="167232" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_BVALID_X: When not in reset, a value of X on BVALID is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RDATA_NUM">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="167371" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RDATA_NUM: The number of read data items must match the corresponding ARLEN. Spec: section A3.4.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RDATA_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="167517" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RDATA_STABLE: RDATA must remain stable when RVALID is asserted and RREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RDATA_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="167665" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RDATA_X: When RVALID is high, a value of X on RDATA valid byte lanes is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RID">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="167821" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RID: A slave can only give read data with an ID to match an outstanding read transaction. Spec: section A5.3.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RID_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="167980" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RID_STABLE: RID must remain stable when RVALID is asserted and RREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RID_TIEOFF">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="168124" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RID_TIEOFF: RID must be stable when ID_WIDTH is set to 0.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RID_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="168230" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RID_X: When RVALID is high, a value of X on RID is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RLAST_ALL_DONE_EOS">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="168365" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RLAST_ALL_DONE_EOS: All outstanding read bursts must have completed a the end of the simulation.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RLAST_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="168509" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RLAST_STABLE: RLAST must remain stable when RVALID is asserted and RREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RLAST_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="168657" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RLAST_X: When RVALID is high, a value of X on RLAST is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RRESP_EXOKAY">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="168796" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RRESP_EXOKAY: An EXOKAY read response can only be given to an exclusive read access. Spec: section A7.2.3.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RRESP_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="168950" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RRESP_STABLE: RRESP must remain stable when RVALID is asserted and RREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RRESP_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="169098" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RRESP_X: When RVALID is high, a value of X on RRESP is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RUSER_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="169237" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RUSER_STABLE: RUSER must remain stable when RVALID is asserted and RREADY low. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RUSER_TIEOFF">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="169385" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RUSER_TIEOFF: RUSER must be stable when RUSER_WIDTH is set to 0.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RUSER_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="169498" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RUSER_X: When RVALID is high, a value of X on RUSER is not permitted.  Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RVALID_RESET">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="169638" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RVALID_RESET: The earliest point after reset that a master is permitted to begin driving ARVALID, AWVALID, or WVALID HIGH is at a rising ACLK edge after ARESETn is HIGH. Spec: Figure A3-1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RVALID_STABLE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="169874" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RVALID_STABLE: Once RVALID is asserted, it must remain asserted until RREADY is high. Spec: section A3.2.1.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_RVALID_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="170029" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_RVALID_X: When not in reset, a value of X on RVALID is not permitted. Spec: section A3.1.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="ERRS_WREADY_X">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="170168" />
+                    <option name="replacementList" value="&quot;AXI_ERRS_WREADY_X: When not in reset, a value of X on WREADY is not permitted. Spec: section A3.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="GLBL">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="141" />
+                    <option name="source" value="glbl.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="RECM_BREADY_MAX_WAIT">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="170307" />
+                    <option name="replacementList" value="&quot;AXI_RECM_BREADY_MAX_WAIT: BREADY should be asserted within MAXWAITS cycles of BVALID being asserted.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="RECM_EXCL_MATCH">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="170446" />
+                    <option name="replacementList" value="&quot;AXI_RECM_EXCL_MATCH: The address payload of an exclusive write should be the same as the preceding exclusive read with the same ID. Spec: section A7.2.4.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="RECM_EXCL_PAIR">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="170638" />
+                    <option name="replacementList" value="&quot;AXI_RECM_EXCL_PAIR: An exclusive write should have an earlier outstanding completed exclusive read with the same ID. Spec: section A7.2.2.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="RECM_RREADY_MAX_WAIT">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="170815" />
+                    <option name="replacementList" value="&quot;AXI_RECM_RREADY_MAX_WAIT. RREADY should be asserted within MAXWAITS cycles of RVALID being asserted.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="RECS_ARREADY_MAX_WAIT">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="170954" />
+                    <option name="replacementList" value="&quot;AXI_RECS_ARREADY_MAX_WAIT. ARREADY should be asserted within MAXWAITS cycles of ARVALID being asserted.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="RECS_AWREADY_MAX_WAIT">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="171096" />
+                    <option name="replacementList" value="&quot;AXI_RECS_AWREADY_MAX_WAIT. AWREADY should be asserted within MAXWAITS cycles of AWVALID being asserted.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="RECS_WREADY_MAX_WAIT">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="171238" />
+                    <option name="replacementList" value="&quot;AXI_RECS_WREADY_MAX_WAIT. WREADY should be asserted within MAXWAITS cycles of WVALID being asserted.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="REPORTER_MACRO">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="174738" />
+                    <option name="parameters">
+                      <list>
+                        <Parameter>
+                          <option name="name" value="ERR_BIT" />
+                        </Parameter>
+                        <Parameter>
+                          <option name="name" value="NET_NAME" />
+                        </Parameter>
+                        <Parameter>
+                          <option name="name" value="MSG_TEXT" />
+                        </Parameter>
+                        <Parameter>
+                          <option name="name" value="SEV_NUM" />
+                        </Parameter>
+                      </list>
+                    </option>
+                    <option name="replacementList" value="always@(posedge NET_NAME) begin &#10;    if ((SEV_NUM != 0) &amp;&amp; (NET_NAME === 1'b1)) begin &#10;      $display(&quot;%t : %m : BIT(%d) : %s : %s&quot;, $time, ERR_BIT, (SEV_NUM == 0) ? &quot;INFO&quot; : (SEV_NUM == 1) ? &quot;WARNING&quot; : &quot;ERROR&quot; , MSG_TEXT); &#10;      if (SEV_NUM == 3) $stop;&#10;      if (SEV_NUM == 4) $finish;&#10;    end else if ((NET_NAME !== 1'b1) &amp;&amp; (NET_NAME !== 1'b0)) begin &#10;      $display(&quot;%t : %m : BIT(%d) :   ERROR : Invalid state %b&quot;, $time, ERR_BIT, NET_NAME); &#10;    end &#10;  end" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="REPORT_XCHECK">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="175278" />
+                    <option name="parameters">
+                      <list>
+                        <Parameter>
+                          <option name="name" value="MSG" />
+                        </Parameter>
+                        <Parameter>
+                          <option name="name" value="SEV_NUM" />
+                        </Parameter>
+                      </list>
+                    </option>
+                    <option name="replacementList" value="if(SEV_NUM == 1) $info(MSG); &#10;      else if (SEV_NUM == 2) $warning(MSG); &#10;      else if (SEV_NUM == 3) $error(MSG); &#10;      else if (SEV_NUM == 4) $fatal(1,MSG);" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="TCQ">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="3654" />
+                    <option name="replacementList" value="100" />
+                    <option name="source" value="fifo_generator_vlog_beh.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_ARESETN_PULSE_WIDTH">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="174050" />
+                    <option name="replacementList" value="&quot;XILINX_ARESETN_PULSE_WIDTH. ARESETn must be low for atleast 16 ACLKn cycles.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_ARREADY_RESET">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="171377" />
+                    <option name="replacementList" value="&quot;XILINX_ARREADY_RESET. ARREADY must be low for the first clock edge that ARESETn goes high.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_AR_MAX_BURST">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="171515" />
+                    <option name="replacementList" value="&quot;XILINX_AR_MAX_BURST. AR MASTER has issued a burst longer than the declared MAXIMUM.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_AR_SUPPORTS_NARROW_BURST">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="171646" />
+                    <option name="replacementList" value="&quot;XILINX_AR_SUPPORTS_NARROW_BURST. AR Narrow burst issued from MASTER. Connection has been declared to NOT support narrow bursts.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_AR_SUPPORTS_NARROW_CACHE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="171821" />
+                    <option name="replacementList" value="&quot;XILINX_AR_SUPPORTS_NARROW_CACHE. AR Non-modifiable burst issued from MASTER. Connection has been declared to NOT support narrow bursts.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_AWREADY_RESET">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="172004" />
+                    <option name="replacementList" value="&quot;XILINX_AWREADY_RESET. AWREADY must be low for the first clock edge that ARESETn goes high.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_AW_MAX_BURST">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="172142" />
+                    <option name="replacementList" value="&quot;XILINX_AW_MAX_BURST. AW MASTER has issued a burst longer than the declared MAXIMUM.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_AW_SUPPORTS_NARROW_BURST">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="172273" />
+                    <option name="replacementList" value="&quot;XILINX_AW_SUPPORTS_NARROW_BURST. AW Narrow burst issued from MASTER. Connection has been declared to NOT support narrow bursts.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_AW_SUPPORTS_NARROW_CACHE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="172448" />
+                    <option name="replacementList" value="&quot;XILINX_AW_SUPPORTS_NARROW_CACHE. AW Non-modifiable burst issued from MASTER. Connection has been declared to NOT support narrow bursts.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_AXI4_ERRM_NO_STRB_ADDRESS">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="174167" />
+                    <option name="replacementList" value="&quot;XILINX_AXI4_ERRM_NO_STRB_ADDRESS. When there is no WSTRB, address must be aligned with data width&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_AXI4_ERRM_SUPPORTS_NARROW_BURST_SIZE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="174310" />
+                    <option name="replacementList" value="&quot;XILINX_AXI4_ERRM_SUPPORTS_NARROW_BURST_SIZE. When there is support narrow burst along with WSTRB, then AWSIZE has to be greater than or equal to data width&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_BREADY_RESET">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="172631" />
+                    <option name="replacementList" value="&quot;XILINX_BREADY_RESET. BREADY must be low for the first clock edge that ARESETn goes high.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_RD_DECERR">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="174574" />
+                    <option name="replacementList" value="&quot;Detected Read DECERR&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_RD_SLVERR">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="174522" />
+                    <option name="replacementList" value="&quot;Detected Read SLVERR&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_RECM_CONTINUOUS_WTRANSFERS_MAX_WAIT">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="172767" />
+                    <option name="replacementList" value="&quot;XILINX_RECM_CONTINUOUS_WTRANSFERS_MAX_WAIT. WVALID should be asserted within MAXWAITS cycles of either AW command transfer or previous W transfer while there are outstanding AW commands.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_RECM_WLAST_TO_AWVALID_MAX_WAIT">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="173010" />
+                    <option name="replacementList" value="&quot;XILINX_RECM_WLAST_TO_AWVALID_MAX_WAIT. AWVALID should be asserted within MAXWAITS cycles of WLAST transfer or previous AW transfer if there are yet more WLAST transfers outstanding.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_RECS_CONTINUOUS_RTRANSFERS_MAX_WAIT">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="173248" />
+                    <option name="replacementList" value="&quot;XILINX_RECS_CONTINUOUS_RTRANSFERS_MAX_WAIT. RVALID should be asserted within MAXWAITS cycles of either AR command transfer or previous R transfer while there are outstanding AR commands.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_RECS_WRITE_TO_BVALID_MAX_WAIT">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="173491" />
+                    <option name="replacementList" value="&quot;XILINX_RECS_WRITE_TO_BVALID_MAX_WAIT. BVALID should be asserted within MAXWAITS cycles of AW command transfer or WLAST transfer (whichever is later), or previous B transfer if there are yet more AW and WLAST transfers outstanding.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_RREADY_RESET">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="173778" />
+                    <option name="replacementList" value="&quot;XILINX_RREADY_RESET. RREADY must be low for the first clock edge that ARESETn goes high.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_WREADY_RESET">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="173914" />
+                    <option name="replacementList" value="&quot;XILINX_WREADY_RESET. WREADY must be low for the first clock edge that ARESETn goes high.&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_WR_DECERR">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="174679" />
+                    <option name="replacementList" value="&quot;Detected Write DECERR&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XILINX_WR_SLVERR">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="174626" />
+                    <option name="replacementList" value="&quot;Detected Write SLVERR&quot;" />
+                    <option name="source" value="axi_protocol_checker_v2_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="XSIM_ISIM">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="inclusionDependencies">
+                      <list>
+                        <InclusionDependency>
+                          <option name="name" value="XILINX_SIMULATOR" />
+                          <option name="rule" value="DEFINED" />
+                        </InclusionDependency>
+                      </list>
+                    </option>
+                    <option name="offset" value="41686" />
+                    <option name="source" value="processing_system7_vip_v1_0_vl_rfs.sv" />
+                  </Body>
+                  <Body>
+                    <option name="inclusionDependencies">
+                      <list>
+                        <InclusionDependency>
+                          <option name="name" value="XILINX_ISIM" />
+                          <option name="rule" value="DEFINED" />
+                        </InclusionDependency>
+                      </list>
+                    </option>
+                    <option name="offset" value="41733" />
+                    <option name="source" value="processing_system7_vip_v1_0_vl_rfs.sv" />
+                  </Body>
+                  <Body>
+                    <option name="inclusionDependencies">
+                      <list>
+                        <InclusionDependency>
+                          <option name="name" value="XILINX_SIMULATOR" />
+                          <option name="rule" value="DEFINED" />
+                        </InclusionDependency>
+                      </list>
+                    </option>
+                    <option name="offset" value="67901" />
+                    <option name="source" value="processing_system7_vip_v1_0_vl_rfs.sv" />
+                  </Body>
+                  <Body>
+                    <option name="inclusionDependencies">
+                      <list>
+                        <InclusionDependency>
+                          <option name="name" value="XILINX_ISIM" />
+                          <option name="rule" value="DEFINED" />
+                        </InclusionDependency>
+                      </list>
+                    </option>
+                    <option name="offset" value="67948" />
+                    <option name="source" value="processing_system7_vip_v1_0_vl_rfs.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="sc_util_v1_0_3_constants_GLOBAL_CONSTANTS">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="58" />
+                    <option name="source" value="sc_util_v1_0_3_constants.vh" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

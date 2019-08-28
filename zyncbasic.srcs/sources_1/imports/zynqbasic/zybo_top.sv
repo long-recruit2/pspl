@@ -26,11 +26,13 @@ module ZYBO_top
   input wire [3:0] btn,
   input wire [3:0] sw,
   output wire [3:0] led,
+  /*
   inout wire ja1,ja2,ja3,ja4,ja7,ja8,ja9,ja10,
   inout wire jb1,jb2,jb3,jb4,jb7,jb8,jb9,jb10,
   inout wire jc1,jc2,jc3,jc4,jc7,jc8,jc9,jc10,
   inout wire jd1,jd2,jd3,jd4,jd7,jd8,jd9,jd10,
   inout wire je1,je2,je3,je4,je7,je8,je9,je10,
+  */
   inout wire [14:0] DDR_addr,
   inout wire [2:0] DDR_ba,
   inout wire DDR_cas_n, DDR_ck_n, DDR_ck_p, DDR_cke, DDR_cs_n,
@@ -62,34 +64,36 @@ module ZYBO_top
  //assign 	clk=clk0;
  //assign 	rstn=1'b1;
 
- Zynq_PS Zynq_PS_i
-         (.DDR_addr(DDR_addr),
-          .DDR_ba(DDR_ba),
-          .DDR_cas_n(DDR_cas_n),
-          .DDR_ck_n(DDR_ck_n),
-          .DDR_ck_p(DDR_ck_p),
-          .DDR_cke(DDR_cke),
-          .DDR_cs_n(DDR_cs_n),
-          .DDR_dm(DDR_dm),
-          .DDR_dq(DDR_dq),
-          .DDR_dqs_n(DDR_dqs_n),
-          .DDR_dqs_p(DDR_dqs_p),
-          .DDR_odt(DDR_odt),
-          .DDR_ras_n(DDR_ras_n),
-          .DDR_reset_n(DDR_reset_n),
-          .DDR_we_n(DDR_we_n),
-          .FIXED_IO_ddr_vrn(FIXED_IO_ddr_vrn),
-          .FIXED_IO_ddr_vrp(FIXED_IO_ddr_vrp),
-          .FIXED_IO_mio(FIXED_IO_mio),
-          .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
-          .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
-          .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
-          .clko(arm_clko),
-          .gpi01(arm_gpi01),
-          .gpi02(arm_gpi02),
-          .gpo01(arm_gpo01),
-          .gpo02(arm_gpo02),
-          .rstno(arm_rstno));
+ Zynq_PS Zynq_PS_i(
+  // these ports come from zynq
+  .DDR_addr(DDR_addr),
+  .DDR_ba(DDR_ba),
+  .DDR_cas_n(DDR_cas_n),
+  .DDR_ck_n(DDR_ck_n),
+  .DDR_ck_p(DDR_ck_p),
+  .DDR_cke(DDR_cke),
+  .DDR_cs_n(DDR_cs_n),
+  .DDR_dm(DDR_dm),
+  .DDR_dq(DDR_dq),
+  .DDR_dqs_n(DDR_dqs_n),
+  .DDR_dqs_p(DDR_dqs_p),
+  .DDR_odt(DDR_odt),
+  .DDR_ras_n(DDR_ras_n),
+  .DDR_reset_n(DDR_reset_n),
+  .DDR_we_n(DDR_we_n),
+  .FIXED_IO_ddr_vrn(FIXED_IO_ddr_vrn),
+  .FIXED_IO_ddr_vrp(FIXED_IO_ddr_vrp),
+  .FIXED_IO_mio(FIXED_IO_mio),
+  .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
+  .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
+  .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+  .clko(arm_clko),
+  // port names come from block design port I added, connected with AXI GPIO
+  .gpi01(arm_gpi01), // in to cpu, out from PL
+  .gpi02(arm_gpi02),
+  .gpo01(arm_gpo01), // out from cpu, in to PL
+  .gpo02(arm_gpo02),
+  .rstno(arm_rstno));
 
  //----------------------------------------------------------------
  // setup : 汎用カウンタと入力チャタリング対策、出力
@@ -104,15 +108,16 @@ module ZYBO_top
      if (!rstn) counter<=0;
      else counter<=counter+1;
 
- reg [3:0] 	led_r;
- reg [3:0] 	sw_r;
- reg [3:0] 	btn_r;
+ logic [3:0] 	led_r = 0;
+ logic [3:0] 	sw_r = 0;
+ logic [3:0] 	btn_r = 0;
 
- always @(posedge clk)
-     if (counter[15:0]==0) begin // anti-chattering
-      sw_r  <= sw;
-      btn_r <= btn;
-     end
+ always_ff @(posedge clk) begin
+  if (counter[15:0]==0) begin // anti-chattering
+   sw_r  <= sw;
+   btn_r <= btn;
+  end
+ end
 
  assign led=led_r;
 
@@ -141,7 +146,7 @@ module ZYBO_top
 
  //----------------------------------------------------------------
  // setup : Zynq_PS GPIO への入力
-
+ // 32 = 12 + 4 + 12 + 4
  assign  arm_gpi01={12'b0,sw_r,12'b0,btn_r};
  assign  arm_gpi02=counter;
 
@@ -169,6 +174,7 @@ module ZYBO_top
  //----------------------------------------------------------------
  // setup : 汎用入出力ピンの接続
 
+ /*
  assign      ja1 =1'bz;
  assign      ja2 =1'bz;
  assign      ja3 =1'bz;
@@ -213,6 +219,7 @@ module ZYBO_top
  assign      je8 =1'b0;
  assign      je9 =1'bz;
  assign      je10=1'bz;
+*/
 
 endmodule : ZYBO_top
 

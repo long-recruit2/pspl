@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
@@ -34,10 +35,10 @@ set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo-z7-20:part0:1.0 [current_project]
 set_property ip_output_repo c:/Users/long-/Git/zyncbasic/zyncbasic.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib {
-  C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/hex2oled.v
-  C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/uart.v
-  C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/zybo_top.v
+read_verilog -library xil_defaultlib -sv {
+  C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/hex2oled.sv
+  C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/uart_tx.sv
+  C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/imports/zynqbasic/zybo_top.sv
 }
 add_files C:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/bd/Zynq_PS/Zynq_PS.bd
 set_property used_in_implementation false [get_files -all c:/Users/long-/Git/zyncbasic/zyncbasic.srcs/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc]

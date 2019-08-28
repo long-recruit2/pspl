@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon Aug 26 21:40:06 2019
-# Process ID: 3596
+# Start of session at: Wed Aug 28 23:49:07 2019
+# Process ID: 14636
 # Current directory: C:/Users/long-/Git/zyncbasic/zyncbasic.runs/synth_1
 # Command line: vivado.exe -log ZYBO_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ZYBO_top.tcl
 # Log file: C:/Users/long-/Git/zyncbasic/zyncbasic.runs/synth_1/ZYBO_top.vds

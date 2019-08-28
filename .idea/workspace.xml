@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8a891d92-e51f-48d5-af50-fee39b26fadb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/uart_rx.sv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/uart_tx.sv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.hw/zyncbasic.lpr" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.hw/zyncbasic.lpr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/.init_design.begin.rst" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/.init_design.begin.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/.opt_design.begin.rst" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/.opt_design.begin.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/.place_design.begin.rst" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/.place_design.begin.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/.route_design.begin.rst" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/.route_design.begin.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/.vivado.begin.rst" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/.vivado.begin.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/.write_bitstream.begin.rst" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/.write_bitstream.begin.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top.bit" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top.bit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top.hwdef" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top.hwdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top.sysdef" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top.sysdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top.tcl" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top.tcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top.vdi" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top.vdi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_bus_skew_routed.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_bus_skew_routed.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_bus_skew_routed.rpx" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_bus_skew_routed.rpx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_clock_utilization_routed.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_clock_utilization_routed.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_control_sets_placed.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_control_sets_placed.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_drc_opted.pb" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_drc_opted.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_drc_opted.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_drc_opted.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_drc_opted.rpx" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_drc_opted.rpx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_drc_routed.pb" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_drc_routed.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_drc_routed.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_drc_routed.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_drc_routed.rpx" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_drc_routed.rpx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_io_placed.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_io_placed.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_methodology_drc_routed.pb" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_methodology_drc_routed.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_methodology_drc_routed.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_methodology_drc_routed.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_methodology_drc_routed.rpx" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_methodology_drc_routed.rpx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_opt.dcp" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_opt.dcp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_placed.dcp" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_placed.dcp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_power_routed.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_power_routed.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_power_routed.rpx" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_power_routed.rpx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_power_summary_routed.pb" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_power_summary_routed.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_route_status.pb" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_route_status.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_route_status.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_route_status.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_routed.dcp" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_routed.dcp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_timing_summary_routed.pb" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_timing_summary_routed.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_timing_summary_routed.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_timing_summary_routed.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_timing_summary_routed.rpx" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_timing_summary_routed.rpx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_utilization_placed.pb" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_utilization_placed.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_utilization_placed.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/ZYBO_top_utilization_placed.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/gen_run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/gen_run.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/init_design.pb" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/init_design.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/opt_design.pb" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/opt_design.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/place_design.pb" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/place_design.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/project.wdf" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/project.wdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/route_design.pb" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/route_design.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/usage_statistics_webtalk.html" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/usage_statistics_webtalk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/usage_statistics_webtalk.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/usage_statistics_webtalk.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/vivado.jou" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/vivado.jou" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/vivado.pb" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/vivado.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/impl_1/write_bitstream.pb" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/impl_1/write_bitstream.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/synth_1/.Xil/ZYBO_top_propImpl.xdc" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/synth_1/.Xil/ZYBO_top_propImpl.xdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/synth_1/.vivado.begin.rst" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/synth_1/.vivado.begin.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/synth_1/ZYBO_top.dcp" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/synth_1/ZYBO_top.dcp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/synth_1/ZYBO_top.tcl" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/synth_1/ZYBO_top.tcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/synth_1/ZYBO_top.vds" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/synth_1/ZYBO_top.vds" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/synth_1/ZYBO_top_utilization_synth.pb" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/synth_1/ZYBO_top_utilization_synth.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/synth_1/ZYBO_top_utilization_synth.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/synth_1/ZYBO_top_utilization_synth.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/synth_1/gen_run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/synth_1/gen_run.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/synth_1/vivado.jou" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/synth_1/vivado.jou" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.runs/synth_1/vivado.pb" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.runs/synth_1/vivado.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.cdt.core/testgpio.1566823612537.pdom" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.cdt.core/testgpio.1566823612537.pdom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.cdt.core/testgpio_bsp.1566823612566.pdom" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.cdt.core/testgpio_bsp.1566823612566.pdom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.cdt.make.core/testgpio.sc" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.cdt.make.core/testgpio.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.markers.snap" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.markers.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.syncinfo.snap" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.syncinfo.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/ZYBO_top_hw_platform_0/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/ZYBO_top_hw_platform_0/.indexes/properties.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/ZYBO_top_hw_platform_0/.markers.snap" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/ZYBO_top_hw_platform_0/.markers.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/ZYBO_top_hw_platform_0/.syncinfo.snap" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/ZYBO_top_hw_platform_0/.syncinfo.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/testgpio/.indexes/e4/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/testgpio/.indexes/e4/properties.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/testgpio/.markers.snap" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/testgpio/.markers.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/testgpio/.syncinfo.snap" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/testgpio/.syncinfo.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/testgpio_bsp/.indexes/6b/a8/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/testgpio_bsp/.indexes/6b/a8/properties.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/testgpio_bsp/.markers.snap" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/testgpio_bsp/.markers.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/testgpio_bsp/.syncinfo.snap" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/testgpio_bsp/.syncinfo.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/0.snap" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.resources/0.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/ZYBO_top.hdf" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/ZYBO_top.hdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/ZYBO_top_hw_platform_0/ZYBO_top.bit" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/ZYBO_top_hw_platform_0/ZYBO_top.bit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/ZYBO_top_hw_platform_0/system.hdf" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/ZYBO_top_hw_platform_0/system.hdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/testgpio/Debug/src/platform.o" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/testgpio/Debug/src/platform.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/testgpio/Debug/src/testgpio.o" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/testgpio/Debug/src/testgpio.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/testgpio/Debug/testgpio.elf" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/testgpio/Debug/testgpio.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/testgpio/Debug/testgpio.elf.size" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/testgpio/Debug/testgpio.elf.size" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/testgpio/src/testgpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/testgpio/src/testgpio.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/testgpio_bsp/ps7_cortexa9_0/include/xparameters.h" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/testgpio_bsp/ps7_cortexa9_0/include/xparameters.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/testgpio_bsp/ps7_cortexa9_0/lib/libxil.a" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/testgpio_bsp/ps7_cortexa9_0/lib/libxil.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.sdk/testgpio_bsp/system.mss" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.sdk/testgpio_bsp/system.mss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/hex2oled.sv" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/hex2oled.sv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/uart.sv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/zybo_top.sv" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/zybo_top.sv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zyncbasic.xpr" beforeDir="false" afterPath="$PROJECT_DIR$/zyncbasic.xpr" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/zybo_top.sv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="25" column="22" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/hex2oled.sv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/uart_rx.sv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/uart_tx.sv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="e#702#727#0" expanded="true" />
+                <element signature="e#752#777#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SystemVerilog File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>IBUFG</find>
+      <find>jb10</find>
+      <find>sw_r</find>
+      <find>UART0TX</find>
+      <find>waito</find>
+      <find>txd</find>
+      <find>uarto</find>
+      <find>uarto_reg</find>
+      <find>txch_r</find>
+      <find>data</find>
+      <find>counter</find>
+      <find>shiftbuf</find>
+      <find>btn</find>
+      <find>disp</find>
+      <find>HEX2OLED_module</find>
+      <find>PULSEW</find>
+      <find>arm_gpo01</find>
+      <find>gpi01</find>
+      <find>led_r</find>
+      <find>arm_gpi01</find>
+      <find>btn_r</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/zybo_top.v" />
+        <option value="$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/hex2oled.sv" />
+        <option value="$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/uart.sv" />
+        <option value="$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/uart_tx.sv" />
+        <option value="$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/zybo_top.sv" />
+        <option value="$PROJECT_DIR$/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/zyncbasic.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-15" />
+    <option name="y" value="3" />
+    <option name="width" value="1947" />
+    <option name="height" value="1092" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="zyncbasic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyncbasic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zyncbasic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyncbasic" type="462c0819:PsiDirectoryNode" />
+              <item name="zyncbasic.srcs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zyncbasic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyncbasic" type="462c0819:PsiDirectoryNode" />
+              <item name="zyncbasic.srcs" type="462c0819:PsiDirectoryNode" />
+              <item name="constrs_1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zyncbasic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyncbasic" type="462c0819:PsiDirectoryNode" />
+              <item name="zyncbasic.srcs" type="462c0819:PsiDirectoryNode" />
+              <item name="constrs_1" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zyncbasic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyncbasic" type="462c0819:PsiDirectoryNode" />
+              <item name="zyncbasic.srcs" type="462c0819:PsiDirectoryNode" />
+              <item name="constrs_1" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="zynqbasic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zyncbasic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyncbasic" type="462c0819:PsiDirectoryNode" />
+              <item name="zyncbasic.srcs" type="462c0819:PsiDirectoryNode" />
+              <item name="sources_1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zyncbasic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyncbasic" type="462c0819:PsiDirectoryNode" />
+              <item name="zyncbasic.srcs" type="462c0819:PsiDirectoryNode" />
+              <item name="sources_1" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zyncbasic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyncbasic" type="462c0819:PsiDirectoryNode" />
+              <item name="zyncbasic.srcs" type="462c0819:PsiDirectoryNode" />
+              <item name="sources_1" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="zynqbasic" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a891d92-e51f-48d5-af50-fee39b26fadb" name="Default Changelist" comment="" />
+      <created>1566829258360</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566829258360</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="-6" width="1292" height="732" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3294702" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/uart.v">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4230">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/zybo_top.v">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-301">
+          <caret line="127" column="17" lean-forward="true" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/hex2oled.v">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/uart_tx.sv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#702#727#0" expanded="true" />
+            <element signature="e#752#777#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/uart_rx.sv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyncbasic.xpr">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/hex2oled.sv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyncbasic.srcs/sources_1/imports/zynqbasic/zybo_top.sv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyncbasic.srcs/constrs_1/imports/zynqbasic/zybo.xdc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
