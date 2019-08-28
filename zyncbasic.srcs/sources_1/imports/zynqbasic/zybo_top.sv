@@ -21,47 +21,27 @@
 `default_nettype none
 
 module ZYBO_top
- (CLK125M,btn,sw,led,
-  ja1,ja2,ja3,ja4,ja7,ja8,ja9,ja10,
-  jb1,jb2,jb3,jb4,jb7,jb8,jb9,jb10,
-  jc1,jc2,jc3,jc4,jc7,jc8,jc9,jc10,
-  jd1,jd2,jd3,jd4,jd7,jd8,jd9,jd10,
-  je1,je2,je3,je4,je7,je8,je9,je10,
-  DDR_addr, DDR_ba, DDR_cas_n, DDR_ck_n, DDR_ck_p, DDR_cke, DDR_cs_n, DDR_dm,
-  DDR_dq, DDR_dqs_n, DDR_dqs_p, DDR_odt, DDR_ras_n, DDR_reset_n, DDR_we_n,
-  FIXED_IO_ddr_vrn, FIXED_IO_ddr_vrp, FIXED_IO_mio, FIXED_IO_ps_clk,
-  FIXED_IO_ps_porb, FIXED_IO_ps_srstb);
-
- input  /* */ wire        CLK125M;
- input  /* */ wire [ 3:0] btn;
- input  /* */ wire [ 3:0] sw;
- output /* */ wire [ 3:0] led;
- inout  /* */ wire        ja1,ja2,ja3,ja4,ja7,ja8,ja9,ja10; // Pmod JA
- inout  /* */ wire        jb1,jb2,jb3,jb4,jb7,jb8,jb9,jb10; // Pmod JB
- inout  /* */ wire        jc1,jc2,jc3,jc4,jc7,jc8,jc9,jc10; // Pmod JC
- inout  /* */ wire        jd1,jd2,jd3,jd4,jd7,jd8,jd9,jd10; // Pmod JD
- inout  /* */ wire        je1,je2,je3,je4,je7,je8,je9,je10; // Pmod JE
- inout  /* */ wire [14:0] DDR_addr;
- inout  /* */ wire [ 2:0] DDR_ba;
- inout  /* */ wire        DDR_cas_n;
- inout  /* */ wire        DDR_ck_n;
- inout  /* */ wire        DDR_ck_p;
- inout  /* */ wire        DDR_cke;
- inout  /* */ wire        DDR_cs_n;
- inout  /* */ wire [ 3:0] DDR_dm;
- inout  /* */ wire [31:0] DDR_dq;
- inout  /* */ wire [ 3:0] DDR_dqs_n;
- inout  /* */ wire [ 3:0] DDR_dqs_p;
- inout  /* */ wire        DDR_odt;
- inout  /* */ wire        DDR_ras_n;
- inout  /* */ wire        DDR_reset_n;
- inout  /* */ wire        DDR_we_n;
- inout  /* */ wire        FIXED_IO_ddr_vrn;
- inout  /* */ wire        FIXED_IO_ddr_vrp;
- inout  /* */ wire [53:0] FIXED_IO_mio;
- inout  /* */ wire        FIXED_IO_ps_clk;
- inout  /* */ wire        FIXED_IO_ps_porb;
- inout  /* */ wire        FIXED_IO_ps_srstb;
+ (
+  input wire CLK125M,
+  input wire [3:0] btn,
+  input wire [3:0] sw,
+  output wire [3:0] led,
+  inout wire ja1,ja2,ja3,ja4,ja7,ja8,ja9,ja10,
+  inout wire jb1,jb2,jb3,jb4,jb7,jb8,jb9,jb10,
+  inout wire jc1,jc2,jc3,jc4,jc7,jc8,jc9,jc10,
+  inout wire jd1,jd2,jd3,jd4,jd7,jd8,jd9,jd10,
+  inout wire je1,je2,je3,je4,je7,je8,je9,je10,
+  inout wire [14:0] DDR_addr,
+  inout wire [2:0] DDR_ba,
+  inout wire DDR_cas_n, DDR_ck_n, DDR_ck_p, DDR_cke, DDR_cs_n,
+  inout wire [3:0] DDR_dm,
+  inout wire [31:0] DDR_dq,
+  inout wire [3:0] DDR_dqs_n,
+  inout wire [3:0] DDR_dqs_p,
+  inout wire DDR_odt, DDR_ras_n, DDR_reset_n, DDR_we_n, FIXED_IO_ddr_vrn, FIXED_IO_ddr_vrp,
+  inout wire [53:0] FIXED_IO_mio,
+  inout wire FIXED_IO_ps_clk, FIXED_IO_ps_porb, FIXED_IO_ps_srstb
+ );
 
  wire   CLK125M_ibuf,clk0;
  IBUFG ibuf_clk(.I(CLK125M), .O(CLK125M_ibuf));
@@ -234,7 +214,7 @@ module ZYBO_top
  assign      je9 =1'bz;
  assign      je10=1'bz;
 
-endmodule
+endmodule : ZYBO_top
 
 `default_nettype wire
 

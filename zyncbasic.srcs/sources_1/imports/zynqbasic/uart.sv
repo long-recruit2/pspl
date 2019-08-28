@@ -13,6 +13,7 @@
   
 //================================================================
 
+// jb10 = UART0TX = waito
 module UART_RX_module(uarti,datao,valido,waito,clk,resetn);
 
    parameter PULSEW  = 434;
